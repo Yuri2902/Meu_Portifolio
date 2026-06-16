@@ -264,5 +264,49 @@ main{
     .texto p{
     margin-bottom:20px;
     }
+    .conteudo{
+display:flex;
+align-items:center;
+gap:50px;
+flex-wrap:nowrap;
+}
+
+.texto{
+flex:1;
+max-width:900px;
+}
+
+.texto p{
+font-size:20px;
+line-height:1.8;
+margin-bottom:20px;
+text-align:justify;
+}
+
+.conteudo img{
+width:300px;
+height:auto;
+flex-shrink:0;
+}
+.conteudo{
+    display:flex;
+    align-items:flex-start;
+    gap:50px;
+}
+
+.conteudo img{
+    width:300px;
+    border-radius:15px;
+}
+
+.texto{
+    flex:1;
+}
+
+.texto p{
+    margin-bottom:20px;
+    text-align:justify;
+    line-height:1.8;
+}
 }
 
