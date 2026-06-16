@@ -1,253 +1,268 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-background:#fcffe6;
-font-family:‘Playfair Display’, serif;
-overflow-x:hidden;
+    background:#fcffe6;
+    font-family:'Playfair Display', serif;
+    overflow-x:hidden;
 }
 
 /* MENU LATERAL */
 
 .menu-lateral{
-position:fixed;
-right:0;
-top:0;
-
-width:220px;
-height:100vh;
-background:#051c43;
-display:flex;
-flex-direction:column;
-align-items:center;
-padding-top:40px;
-z-index:1000;
-
+    position:fixed;
+    right:0;
+    top:0;
+    width:220px;
+    height:100vh;
+    background:#051c43;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:40px;
+    z-index:1000;
 }
 
 .menu-lateral h2{
-color:#fcffe6;
-margin-bottom:40px;
-font-size:28px;
+    color:#fcffe6;
+    margin-bottom:40px;
+    font-size:28px;
 }
 
 .menu-lateral a{
-color:#fcffe6;
-text-decoration:none;
-margin:12px 0;
-font-size:18px;
-transition:0.3s;
+    color:#fcffe6;
+    text-decoration:none;
+    margin:12px 0;
+    font-size:18px;
+    transition:.3s;
 }
 
 .menu-lateral a:hover{
-transform:scale(1.05);
+    transform:scale(1.05);
 }
 
 /* CONTEÚDO */
 
 main{
-margin-right:220px;
+    margin-right:220px;
 }
 
 /* CAPA */
 
 .inicio{
-min-height:100vh;
-
-display:grid;
-grid-template-columns:1fr 1fr;
-background:#fcffe6;
-
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    background:#fcffe6;
 }
 
 .bloco-azul{
-
-background:#051c43;
-color:#fcffe6;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-border-top-right-radius:60px;
-border-bottom-right-radius:60px;
-margin:40px 0;
-
+    background:#051c43;
+    color:#fcffe6;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-top-right-radius:60px;
+    border-bottom-right-radius:60px;
+    margin:40px 0;
 }
 
 .bloco-azul h1{
-font-size:90px;
-font-weight:400;
+    font-size:90px;
+    font-weight:400;
 }
 
 .bloco-azul h2{
-font-size:55px;
-text-align:center;
-font-weight:400;
-line-height:1.3;
+    font-size:55px;
+    text-align:center;
+    font-weight:400;
+    line-height:1.3;
 }
 
 .foto{
-display:flex;
-justify-content:center;
-align-items:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .foto img{
-width:450px;
-max-width:80%;
+    width:450px;
+    max-width:80%;
 }
 
 /* SEÇÕES */
 
 .secao{
-min-height:100vh;
-padding:80px;
+    min-height:100vh;
+    padding:80px 100px;
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+}
+
+.secao.mostrar{
+    opacity:1;
+    transform:translateY(0);
 }
 
 .secao h1{
-text-align:center;
-color:#051c43;
-font-size:70px;
-margin-bottom:10px;
+    text-align:center;
+    color:#051c43;
+    font-size:70px;
+    margin-bottom:10px;
 }
 
 .secao h2{
-text-align:center;
-color:#233262;
-font-size:35px;
-margin-bottom:50px;
-font-weight:400;
+    text-align:center;
+    color:#233262;
+    font-size:35px;
+    margin-bottom:50px;
+    font-weight:400;
 }
 
+/* CONTEÚDO DAS SEÇÕES */
+
 .conteudo{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:60px;
-flex-wrap:wrap;
+    display:flex;
+    align-items:flex-start;
+    gap:50px;
+    width:100%;
 }
 
 .conteudo img{
-width:300px;
-border-radius:15px;
+    width:320px;
+    min-width:320px;
+    border-radius:15px;
+}
+
+.conteudo div{
+    flex:1;
 }
 
 .conteudo p{
-max-width:600px;
-font-size:20px;
-line-height:1.8;
-text-align:justify;
+    font-size:20px;
+    line-height:1.9;
+    text-align:justify;
+    margin-bottom:20px;
 }
 
 /* PROJETOS */
 
 .cards{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
 }
 
 .card{
-width:320px;
-
-background:#fcffe6;
-border-radius:20px;
-padding:25px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-
+    width:320px;
+    background:#fcffe6;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
 .card img{
-width:100%;
-border-radius:12px;
-margin-bottom:15px;
+    width:100%;
+    border-radius:12px;
+    margin-bottom:15px;
 }
 
 .card h3{
-color:#051c43;
-margin-bottom:10px;
+    color:#051c43;
+    margin-bottom:10px;
 }
 
 .card p{
-margin-bottom:20px;
-line-height:1.6;
+    margin-bottom:20px;
+    line-height:1.6;
 }
 
 .card a{
-display:inline-block;
-
-padding:10px 20px;
-background:#051c43;
-color:#fcffe6;
-text-decoration:none;
-border-radius:10px;
-
+    display:inline-block;
+    padding:10px 20px;
+    background:#051c43;
+    color:#fcffe6;
+    text-decoration:none;
+    border-radius:10px;
 }
 
 .card a:hover{
-background:#233262;
-}
-
-/* ANIMAÇÕES */
-
-.secao{
-opacity:0;
-transform:translateY(50px);
-transition:1s;
-}
-
-.secao.mostrar{
-opacity:1;
-transform:translateY(0);
+    background:#233262;
 }
 
 /* RESPONSIVO */
 
 @media(max-width:1000px){
 
-.menu-lateral{
-    width:100%;
-    height:auto;
-    position:relative;
-    flex-direction:row;
-    justify-content:center;
-    gap:20px;
-    padding:20px;
-}
-main{
-    margin-right:0;
-}
-.inicio{
-    grid-template-columns:1fr;
-}
-.bloco-azul{
-    border-radius:0;
-    margin:0;
-    min-height:50vh;
-}
-.bloco-azul h1{
-    font-size:60px;
-}
-.bloco-azul h2{
-    font-size:40px;
-}
-.secao{
-    padding:40px 20px;
-}
-.secao h1{
-    font-size:45px;
-}
-.conteudo img{
-    width:220px;
+    .menu-lateral{
+        width:100%;
+        height:auto;
+        position:relative;
+        flex-direction:row;
+        justify-content:center;
+        gap:20px;
+        padding:20px;
+    }
+
+    main{
+        margin-right:0;
+    }
+
+    .inicio{
+        grid-template-columns:1fr;
+    }
+
+    .bloco-azul{
+        border-radius:0;
+        margin:0;
+        min-height:50vh;
+    }
+
+    .bloco-azul h1{
+        font-size:60px;
+    }
+
+    .bloco-azul h2{
+        font-size:40px;
+    }
+
+    .secao{
+        padding:40px 20px;
+    }
+
+    .secao h1{
+        font-size:45px;
+    }
+
+    .conteudo{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .conteudo img{
+        width:220px;
+        min-width:auto;
+    }
+
+    .conteudo p{
+        font-size:18px;
+    }
+    .texto{
+    flex:1;
+    }
+    .texto p{
+    margin-bottom:20px;
+    }
 }
 
-}
