@@ -9,7 +9,7 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#f1fbf6;
+background:#fcffe6;
 font-family:‘Playfair Display’, serif;
 overflow-x:hidden;
 }
@@ -33,13 +33,13 @@ z-index:1000;
 }
 
 .menu-lateral h2{
-color:#f1fbf6;
+color:#fcffe6;
 margin-bottom:40px;
 font-size:28px;
 }
 
 .menu-lateral a{
-color:#f1fbf6;
+color:#fcffe6;
 text-decoration:none;
 margin:12px 0;
 font-size:18px;
@@ -63,14 +63,14 @@ min-height:100vh;
 
 display:grid;
 grid-template-columns:1fr 1fr;
-background:#f1fbf6;
+background:#fcffe6;
 
 }
 
 .bloco-azul{
 
 background:#051c43;
-color:#f1fbf6;
+color:#fcffe6;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -158,7 +158,7 @@ flex-wrap:wrap;
 .card{
 width:320px;
 
-background:white;
+background:#fcffe6;
 border-radius:20px;
 padding:25px;
 text-align:center;
@@ -187,7 +187,7 @@ display:inline-block;
 
 padding:10px 20px;
 background:#051c43;
-color:white;
+color:#fcffe6;
 text-decoration:none;
 border-radius:10px;
 
