@@ -12,6 +12,10 @@
 </head>
 <body>
 
+<!-- Barra fina no topo que enche conforme a página é rolada (controlada pelo script.js) -->
+<div class="progresso" id="progresso"></div>
+
+<!-- MENU DO TOPO -->
 <header class="topo">
     <a href="#inicio" class="marca">Yuri Rodrigues</a>
     <nav aria-label="Seções do portfólio">
@@ -25,14 +29,16 @@
 
 <main>
 
+<!-- CAPA -->
 <section id="inicio" class="hero">
+    <!-- Estrelas decorativas (flutuam com animação no CSS) -->
     <svg class="estrela e1" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0Q13.5 10.5 24 12Q13.5 13.5 12 24Q10.5 13.5 0 12Q10.5 10.5 12 0Z"/></svg>
     <svg class="estrela e2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0Q13.5 10.5 24 12Q13.5 13.5 12 24Q10.5 13.5 0 12Q10.5 10.5 12 0Z"/></svg>
 
     <div class="hero-texto">
         <p class="apoio">Portfólio</p>
         <h1>Yuri Rodrigues Silva</h1>
-        <p class="lead">Estudante de Desenvolvimento de Software Multiplataforma, criando sites e sistemas com HTML, CSS, JavaScript e banco de dados.</p>
+        <p class="lead">Estudante de Desenvolvimento de Software Multiplataforma. Transformo ideias em sites e sistemas que resolvem problemas reais, usando HTML, CSS, JavaScript e banco de dados.</p>
         <div class="acoes">
             <a class="botao" href="#projetos">Ver projetos</a>
             <a class="botao vazado" href="#sobre">Conhecer minha história</a>
@@ -44,93 +50,100 @@
     </div>
 </section>
 
+<!-- SOBRE / STORYTELLING -->
 <section id="sobre" class="secao claro">
     <div class="miolo estreito">
-        <h2>Minha história</h2>
-        <p>Meu nome é Yuri Rodrigues Silva e sou estudante de Desenvolvimento de Software Multiplataforma (DSM) na FATEC Zona Sul. Desde o primeiro contato com a tecnologia, me interessei por criar soluções digitais e pelo impacto que elas têm na vida das pessoas e das empresas.</p>
-        <p>Busco aprimorar meus conhecimentos com cursos, projetos e experiências práticas. Tenho formação complementar pelo SENAC, no Programa Transforme-se em parceria com a Serasa Experian, e pelo Instituto Percorre, onde desenvolvi competências em programação, desenvolvimento web, banco de dados, versionamento de código e trabalho em equipe.</p>
-        <p>Hoje aprofundo meus estudos em programação e tecnologias web pela graduação e por projetos práticos. Sou dedicada ao aprendizado contínuo e motivada por novos desafios, e quero construir uma carreira sólida em tecnologia.</p>
+        <h2 class="revelar">Minha história</h2>
+        <p class="revelar">Meu nome é Yuri Rodrigues Silva e sou estudante de Desenvolvimento de Software Multiplataforma (DSM) na FATEC Zona Sul. Desde o meu primeiro contato com a tecnologia, percebi que um bom código vai além da tela: ele economiza tempo, organiza negócios e muda a rotina de quem usa. Foi esse impacto, na vida das pessoas e das empresas, que despertou minha vontade de criar soluções digitais.</p>
+        <p class="revelar">Desde então, aprendo na prática. Cada curso, projeto e desafio virou uma oportunidade de evoluir. Tenho formação complementar pelo SENAC, no Programa Transforme-se em parceria com a Serasa Experian, e pelo Instituto Percorre, onde desenvolvi programação, desenvolvimento web, banco de dados, versionamento de código e trabalho em equipe.</p>
+        <p class="revelar">Hoje, aprofundo meus estudos em programação, desenvolvimento de software e tecnologias web, unindo a teoria da graduação aos projetos reais que construo, como sites para pet shop e confeitaria e um sistema de controle de vendas. Sou dedicada, curiosa e movida por novos desafios, e meu objetivo é construir uma carreira sólida em tecnologia.</p>
     </div>
 </section>
 
+<!-- FATEC -->
 <section id="fatec" class="secao">
     <div class="miolo formacao">
-        <div class="logo"><img src="fatec.png" alt="Logotipo da FATEC Zona Sul"></div>
+        <div class="logo retangular revelar"><img src="fatec.png" alt="Logotipo da FATEC Zona Sul"></div>
         <div class="texto">
-            <h2>FATEC Zona Sul</h2>
-            <p class="sub">Desenvolvimento de Software Multiplataforma | cursando</p>
-            <p>A FATEC Zona Sul é uma instituição pública de ensino superior, reconhecida pela qualidade acadêmica e pela formação de profissionais para o mercado de tecnologia.</p>
-            <p>Na graduação, estudo programação, banco de dados, desenvolvimento web, engenharia de software, análise e modelagem de sistemas e metodologias para criar aplicações em diferentes plataformas.</p>
-            <p>Também participo de projetos acadêmicos que aplicam os conceitos na prática e fortalecem minhas habilidades técnicas, analíticas e de trabalho em equipe.</p>
+            <h2 class="revelar">FATEC Zona Sul</h2>
+            <p class="sub revelar">Desenvolvimento de Software Multiplataforma | cursando</p>
+            <p class="revelar">A FATEC Zona Sul é uma instituição pública de ensino superior, reconhecida pela qualidade acadêmica e pela forte ligação com o mercado de tecnologia. O curso de DSM prepara profissionais para criar aplicações que funcionam em diferentes plataformas, como web, desktop e dispositivos móveis.</p>
+            <p class="revelar">Na graduação, estudo programação, banco de dados, desenvolvimento web, engenharia de software, análise e modelagem de sistemas, além de metodologias usadas no dia a dia das equipes de desenvolvimento. Isso me ajuda a entender não só como escrever código, mas como planejar, estruturar e entregar um sistema completo.</p>
+            <p class="revelar">Também participo de projetos acadêmicos que aplicam os conceitos na prática e fortalecem minhas habilidades técnicas, analíticas e de trabalho em equipe. Essa experiência tem sido decisiva para o meu crescimento profissional e para o desenvolvimento de soluções inovadoras.</p>
         </div>
     </div>
 </section>
 
+<!-- INSTITUTO PERCORRE -->
 <section id="percorre" class="secao claro">
     <div class="miolo formacao">
-        <div class="logo"><img src="percorre.jpg" alt="Logotipo do Instituto Percorre"></div>
+        <div class="logo cheio revelar"><img src="percorre.png" alt="Logotipo do Instituto Percorre"></div>
         <div class="texto">
-            <h2>Instituto Percorre</h2>
-            <p class="sub">Desenvolvimento Web</p>
-            <p>Formação com teoria e prática para criar páginas e aplicações modernas. Estudei HTML5 e CSS3 para estruturar e estilizar interfaces, além de Git e GitHub para controle de versão e gestão de projetos.</p>
-            <p>O curso também abordou comunicação profissional, raciocínio lógico e matemático aplicado à tecnologia, soft skills, trabalho em equipe e metodologias do mercado de trabalho.</p>
-            <p>No Projeto Integrador, desenvolvi soluções reais, do planejamento à implementação e apresentação.</p>
-            <p>Participei ainda da palestra "Empoderamento Feminino no Mercado de Trabalho" e de visitas técnicas à TOTVS durante o evento Criatech.</p>
+            <h2 class="revelar">Instituto Percorre</h2>
+            <p class="sub revelar">Desenvolvimento Web</p>
+            <p class="revelar">Formação com teoria e muita prática para criar páginas e aplicações modernas. Estudei HTML5 e CSS3 para estruturar e estilizar interfaces e aprendi a usar Git e GitHub para controlar versões, organizar o código e trabalhar em projetos com outras pessoas.</p>
+            <p class="revelar">O curso foi além da técnica: trabalhei comunicação profissional, raciocínio lógico e matemático aplicado à tecnologia, soft skills, trabalho em equipe e metodologias voltadas ao mercado de trabalho.</p>
+            <p class="revelar">No Projeto Integrador, apliquei tudo isso em soluções reais, acompanhando cada etapa: planejamento, implementação e apresentação dos resultados.</p>
+            <p class="revelar">Participei também da palestra "Empoderamento Feminino no Mercado de Trabalho" e de visitas técnicas à TOTVS durante o evento Criatech, experiências que ampliaram minha visão sobre o mercado de tecnologia.</p>
         </div>
     </div>
 </section>
 
+<!-- SENAC -->
 <section id="senac" class="secao">
     <div class="miolo formacao">
-        <div class="logo"><img src="senac.jpg" alt="Logotipo do SENAC"></div>
+        <div class="logo revelar"><img src="senac.jpg" alt="Logotipo do SENAC"></div>
         <div class="texto">
-            <h2>SENAC</h2>
-            <p class="sub">Programa Transforme-se | Serasa Experian</p>
-            <p>Formação em desenvolvimento de sistemas, com lógica de programação, banco de dados, testes de software, versionamento de código e boas práticas.</p>
-            <p>No curso de Lógica de Programação, trabalhei algoritmos, estruturas de controle, Programação Orientada a Objetos (POO), organização de código e técnicas de depuração.</p>
-            <p>Em Informática Básica, aprendi o uso profissional do Windows, do Pacote Office, da internet e da organização digital.</p>
+            <h2 class="revelar">SENAC</h2>
+            <p class="sub revelar">Programa Transforme-se | Serasa Experian</p>
+            <p class="revelar">Formação em desenvolvimento de sistemas que reuniu lógica de programação, banco de dados, testes de software, versionamento de código e boas práticas de desenvolvimento, a base para escrever software organizado e confiável.</p>
+            <p class="revelar">No curso de Lógica de Programação, desenvolvi o raciocínio lógico e a resolução de problemas por meio de algoritmos, estruturas de controle, Programação Orientada a Objetos (POO), organização de código e técnicas de depuração.</p>
+            <p class="revelar">Em Informática Básica, aprendi o uso profissional do Windows, do Pacote Office, da internet e da organização digital, competências essenciais para o ambiente corporativo.</p>
+            <p class="revelar">A experiência deu uma base sólida para o desenvolvimento de software e ampliou minha compreensão sobre tecnologia, produtividade e boas práticas do mercado.</p>
         </div>
     </div>
 </section>
 
+<!-- PROJETOS -->
 <section id="projetos" class="secao escuro">
     <div class="miolo">
-        <h2>Projetos</h2>
+        <h2 class="revelar">Projetos</h2>
+        <p class="intro revelar">Trabalhos em que coloquei em prática o que aprendi, sempre com um objetivo claro para o cliente.</p>
         <div class="cards">
-            <article class="card">
+            <article class="card revelar">
                 <h3>Pet Chico</h3>
                 <p class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></p>
                 <ul>
-                    <li>Site de venda de produtos de pet shop</li>
-                    <li>Link para agendamento de banho e tosa</li>
+                    <li>Site de venda de produtos de pet shop, com catálogo para o cliente escolher</li>
+                    <li>Link para agendamento de banho e tosa, facilitando o contato com a loja</li>
                 </ul>
                 <a href="https://pet-chico.github.io/PetChico_/" target="_blank" rel="noopener">Ver no GitHub</a>
             </article>
-            <article class="card">
+            <article class="card revelar">
                 <h3>Criaê</h3>
                 <p class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></p>
                 <ul>
                     <li>Portfólio de uma agência criada para assessorar o pet shop</li>
-                    <li>Link de contato com todos os integrantes</li>
+                    <li>Link de contato com todos os integrantes da equipe</li>
                 </ul>
                 <a href="https://agenciacriae.github.io/agcria-/" target="_blank" rel="noopener">Ver no GitHub</a>
             </article>
-            <article class="card">
+            <article class="card revelar">
                 <h3>Site da Confeitaria Thayara Polizel</h3>
                 <p class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></p>
                 <ul>
-                    <li>Site de venda de produtos da confeitaria</li>
-                    <li>Redirecionamento para o contato e as redes sociais da empresa</li>
+                    <li>Site de venda dos produtos da confeitaria</li>
+                    <li>Redirecionamento para o contato e para todas as redes sociais da empresa</li>
                 </ul>
                 <a href="https://github.com/Yuri2902/Meu_Portifolio.git" target="_blank" rel="noopener">Ver no GitHub</a>
             </article>
-            <article class="card">
+            <article class="card revelar">
                 <h3>Aplicação Windows Forms da Confeitaria Thayara Polizel</h3>
                 <p class="tags"><span>Windows Forms</span></p>
                 <ul>
-                    <li>Controle de entrada e saída de vendas, com registro de pedidos</li>
+                    <li>Controle de entrada e saída de vendas, com registro de todos os pedidos</li>
                     <li>Exportação de relatórios para a organização contínua da usuária</li>
-                    <li>Exportação de orçamento para o cliente ver os valores dos produtos</li>
+                    <li>Exportação de orçamento para o cliente ver os valores dos produtos que deseja comprar</li>
                 </ul>
                 <a href="https://github.com/rubens-costa55/ProjetoConfeitaria" target="_blank" rel="noopener">Ver no GitHub</a>
             </article>
